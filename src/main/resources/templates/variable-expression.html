@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Variable Expression Demo: </title>
+</head>
+<body>
+<h2>Variable Expression Demo :::::::::</h2>
+<h2>User Details are :::::::::::::::::</h2>
+<div>
+    <p   th:text="${user.getName()}">Name:</p>
+    <p> Email: <strong th:text="${user.getEmail()}"></strong></p>
+    <p> Role: <strong th:text="${user.getRole()}"></strong></p>
+    <p> Gender: <strong th:text="${user.getGender()}"></strong></p>
+    <p> Phone: <strong th:text="${user.getPhone()}"></strong></p>
+</div>
+
+
+</body>
+</html>
